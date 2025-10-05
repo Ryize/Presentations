@@ -361,7 +361,7 @@ PGPASSWORD=admin psql -h localhost -U admin -d fin -f tests/rls_tests.sql
 
 ---
 
-## Миграции (по желанию)
+## Миграции (если надо)
 Сложи всё в `migrations/V1__init.sql` и прогоняй Flyway/Liquibase. Главное — порядок: роли/схема → таблицы → включаем RLS → политики → гранты → сиды.
 
 ---
@@ -382,6 +382,3 @@ PGPASSWORD=admin psql -h localhost -U admin -d fin -f tests/rls_tests.sql
   ```
 
 ---
-
-### Готово
-Копируй этот файл в `README.md`, SQL — в папку `sql/`, добавь `docker-compose.yml`, и всё повторится из коробки. Если хочешь, позже добьём раздел под SQL Server или интеграцию со своим бэкендом (Supabase/Hasura/Spring/SQLAlchemy).
